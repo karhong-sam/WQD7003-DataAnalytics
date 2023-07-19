@@ -1,0 +1,36 @@
+1. 
+df = pd.read_excel('Customer.xlsx')
+
+2. 
+plt.bar(df['payment_method'], df['count'])
+plt.title('Payment Methods')
+plt.show()
+
+3. df.dropna()
+
+4. 
+scaler = MinMaxScaler()
+df_normalized = pd.DataFrame(scaler.fit_transform(df), columns=df['LastTransaction'])
+
+5. 
+df['payment_method'] = df['payment_method'].replace({0: 'credit card', 1: 'cheque', 2: 'cash'})
+
+6. 
+X = df.drop('payment_method', axis=1)
+y = df['payment_method']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+model = GaussianNB()
+model.fit(X_train, y_train)
+
+y_pred_train = model.predict(X_train)
+y_pred_test = model.predict(X_test)
+
+train_acc = accuracy_score(y_train, y_pred_train)
+test_acc = accuracy_score(y_test, y_pred_test)
+conf = confusion_matrix(y_test, y_pred_test)
+
+print('Train accuracy: ', train_acc)
+print('Test accuracy: ', test_acc)
+print('Confusion Matrix: ', conf)

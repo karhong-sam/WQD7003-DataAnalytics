@@ -1,0 +1,42 @@
+num_staffs = 4000
+turnover = 0.15
+
+goal: to keep staffs
+
+instructions: no coding, pure essay, as details as possible
+
+1. 
+a. What are the main reasons employees leave the company? By identifying the key factors, the employer can focus on specific areas like salary, work-life balance, and job satisfaction that contribute to employee attrition.
+ 
+b. What are the trends or patterns that indicate the potential risk of employees leaving the company? Some departments might have a higher turnover rate compared to other departments based on the historical data. By examining this issue, the employer can take action to retain the employees.
+
+2.
+a. Training and Development Participation:
+This KPI measures the extent of employee participation in training and development programmes offered by the company. It shows the company's willingness to invest in employment growth and development opportunities. A higher participation rate indicates positive satisfaction with the company.
+
+b. Employee Satisfaction Score:
+This KPI measures employee satisfaction levels through surveys or other feedback systems. It offers insights into the workplace, duties, and general job satisfaction from the perspective of the employees. A higher satisfaction rating suggests a greater chance of retention.
+
+3. 
+a. Handling missing data:
+There is missing data within the dataset, which will affect the analysis. It's important to either perform imputation or delete the missing data to minimise the biases of the data.
+
+b. Data normalisation:
+Some data will display at a larger scale, which might affect the skewness of the data and thus distort the patterns or relationships of the data. By implementing min-max normalisation or z-score normalisation, the range will be transformed into a range of 0 to 1 (min-max normalisation) or a distribution with a mean of 0 and a standard deviation of 1 (z-score).
+
+4.
+a. Descriptive Analysis:
+This analysis is trying to figure out 'What's happened in the past?' about the employees' turnover rate. It helps identify the patterns and trends in turnover and provides insights for further analysis.
+
+b. Inferential Analysis:
+This analysis is trying to find out 'Why did it happen?' about the employees' turnover rate. It helps to identify the root causes of the employees' turnover and the relationships between different variables and retention.
+
+c. Predictive Analysis:
+This analysis looks at 'What is likely to be happen in the future?' about the employees' turnover rate. It can help identify the risks of turnover and forecast the future attrition rate.
+
+5.
+a. Bar charts:
+Bar charts can visualise the categorical variables related to turnover, such as reason for leaving, department satisfaction, and gender distribution. It also provides a clearer overview of the distributions, allowing easy comparison of the categorical variables.
+
+b. Line charts:
+Line charts helps identify the trend of turnover over time. By plotting these charts, employers can make decisions by looking at the increasing or decreasing trends. It can also be used as an early warning system to detect spikes in turnover rates that need to be addressed immediately.
